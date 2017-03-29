@@ -1,4 +1,4 @@
-export default function balance(state = 2002.55, action) {
+export default function balance(state = 1234.00, action) {
 	switch(action.type) {
 		case 'DEPOSIT_BALANCE':
 			let deposit = (state + Number(action.amount));
