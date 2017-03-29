@@ -1,0 +1,58 @@
+html body {
+	background-color: #0166ff;
+
+	#root {
+		.container {
+			font-family: 'Montserrat', sans-serif;
+			margin: 40px 0;
+			padding: 24px 0;
+			text-align: center;
+			background-color: #0166ff;
+
+			header {
+				h1 {
+					font-family: 'Montserrat Subrayada', sans-serif;
+					text-transform: uppercase;
+					color: #FFF;
+					font-size: 34px;
+					margin: 36px 0;
+					&:hover {
+						color: #OOO;
+					}
+				}
+			}
+
+			.home {
+    		border: 6px solid black;
+    		padding: 56px 0px;
+    		background-color: #FFF;
+    		margin: 0 24px;
+    		
+				.content {
+					border-bottom: 3px solid #000;
+					padding-bottom: 24px;
+					span {
+						padding: 16px;
+						font-size: 24px;
+						display: block;
+					}
+				}
+
+				.buttonSection {
+					margin-top: 30px;
+					.ui.button {
+						margin: 0 8px;
+						border: 3px solid black;
+						background-color: #f8f8f8;
+						color: #000;
+						&:hover {
+							background-color: #01cdcd;
+							color: #FFF;
+						}
+					}
+				}
+
+			}
+		}
+	}
+}
