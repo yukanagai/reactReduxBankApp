@@ -1,7 +1,4 @@
-import React from 'react';
-
-// CREATES A BUTTON ELEMENT 
-//PASS IN TEXT, ICON, OR BOTH
+import React, { PropTypes }  from 'react';
 
 const ButtonWithIcon = (props) => {
 	const text = (props.buttonText) ? props.buttonText : null;
@@ -13,6 +10,11 @@ const ButtonWithIcon = (props) => {
 			{text}
 		</button>
 	);
+};
+
+ButtonWithIcon.propTypes = {
+  buttonText: PropTypes.string,
+  iconClass: PropTypes.string
 };
 
 export default ButtonWithIcon;

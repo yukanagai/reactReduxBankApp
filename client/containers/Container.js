@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 require('../styles/style.scss');
 // MAIN WRAPPING CONTAINER/LAYOUT
@@ -18,3 +18,7 @@ export default class Container extends React.Component {
 		);
 	}
 };
+
+Container.propTypes = {
+  children: PropTypes.node
+}

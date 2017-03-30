@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import DepositModal from '../containers/DepositModal';
 import WithdrawModal from '../containers/WithdrawModal';
 
@@ -11,13 +11,16 @@ const MODAL_COMPONENTS = {
 
 const ModalRoot = (props) => {
 
-	console.log('props.modalType.modalType', props)
-
 	const SpecificModal = MODAL_COMPONENTS[props.params.modalType];
 
 	return (
 		<SpecificModal {...props}/>
 	);
-}
+};
+
+
+ModalRoot.propTypes = {
+  modalType: PropTypes.object
+};
 
 export default ModalRoot;

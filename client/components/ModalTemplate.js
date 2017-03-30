@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import ButtonWithIcon from '../components/ButtonWithIcon.js';
 
@@ -48,5 +48,12 @@ class ModalTemplate extends React.Component {
 		);
 	}
 };
+
+ModalTemplate.propTypes = {
+  handleLeftButtonAction: PropTypes.func.isRequired,
+  handleRightButtonAction: PropTypes.func.isRequired,
+  headerText: PropTypes.string.isRequired,
+};
+
 
 export default ModalTemplate;

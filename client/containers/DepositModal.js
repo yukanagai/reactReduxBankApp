@@ -26,6 +26,6 @@ class DepositModal extends React.Component {
 			/>
 		);
 	}
-}
+};
 
 export default DepositModal;
