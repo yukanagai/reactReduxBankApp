@@ -20,5 +20,5 @@ Welcome to a simple banking web app where users can deposit + withdraw transacti
 ## For improvements
 - Add more integration/interaction tests to better cover all cases.
 - Extract action types/names into a constant to avoid any human typing errors.
-- It was perhaps unnecessary to use state to control the two modal views. Could have just let react router handle it.
+- Take out the control of toggling modal views out of state and just let react router handle it.
 - Set up Express server instead of using webpack dev server.
