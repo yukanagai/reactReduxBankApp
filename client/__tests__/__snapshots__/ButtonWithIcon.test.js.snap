@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BUTTON WITH ICON --- Snapshot 1`] = `
+<button
+  className="ui button"
+  id={undefined}
+  onClick={undefined}
+>
+  <i
+    className="minus icon"
+  />
+</button>
+`;

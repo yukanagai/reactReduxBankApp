@@ -1,7 +1,7 @@
 // DEPOSIT FROM BALANCE
 export function deposit(amount) {
 	return {
-		type: 'DEPOSIT_BALANCE',
+		type: 'DEPOSIT_TRANSACTION',
 		amount
 	}
 };
@@ -9,23 +9,15 @@ export function deposit(amount) {
 // WITHDRAW FROM BALANCE
 export function withdraw(amount) {
 	return {
-		type: 'WITHDRAW_BALANCE',
+		type: 'WITHDRAW_TRANSACTION',
 		amount
 	}
 };
 
 // SHOW SPECIFIC TYPE OF MODAL
-export function showModal(modalType) {
+export function toggleModal(modalType) {
 	return {
-		type: 'SHOW_MODAL',
+		type: 'TOGGLE_MODAL',
 		modalType
 	}
 };
-
-
-// HIDE ALL MODALS
-export function hideModal() {
-	return {
-		type: 'HIDE_MODAL'
-	}
-}

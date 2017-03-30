@@ -1,7 +1,7 @@
 import { createStore } from 'redux';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { hashHistory, browserHistory } from 'react-router';
-import rootReducer from './reducers/index.js';
+import rootReducer from '../reducers/index.js';
 
 const store = createStore(rootReducer);
 

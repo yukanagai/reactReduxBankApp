@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WITHDRAW MODAL --- Snapshot 1`] = `
+<div
+  className="home"
+>
+  <div
+    className="content"
+  >
+    <h3>
+      Header text test
+    </h3>
+    <input
+      className="ui input"
+      maxLength="10"
+      placeholder="numbers only"
+      type="number"
+    />
+  </div>
+  <div
+    className="buttonSection"
+  >
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <button
+        className="ui button"
+        id="cancel"
+        onClick={[Function]}
+      >
+        Cancel
+      </button>
+    </a>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <button
+        className="ui button"
+        id="submit"
+        onClick={[Function]}
+      >
+        Submit
+      </button>
+    </a>
+  </div>
+</div>
+`;

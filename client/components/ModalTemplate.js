@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
+import ButtonWithIcon from '../components/ButtonWithIcon.js';
+
+// MODAL TEMPLATE USED FOR DEPOSIT/WITHDRAW SCREENS
 
 class ModalTemplate extends React.Component {
 
@@ -29,11 +32,17 @@ class ModalTemplate extends React.Component {
 				</div>
 				<div className="buttonSection">
 			    <Link to='/'>
-			    	<div className="ui button" onClick={this.handleLeftButtonAction.bind(this)}>Cancel</div>
+			    	<ButtonWithIcon
+							id='cancel'
+							buttonText='Cancel'
+							onClickAction={this.handleLeftButtonAction.bind(this)} />
 			    </Link>
 			    <Link to='/'>
-			    	<div className="ui button" onClick={this.handleRightButtonAction.bind(this)}>Submit</div><
-			    /Link>
+			    	<ButtonWithIcon
+							id='submit'
+							buttonText='Submit'
+							onClickAction={this.handleRightButtonAction.bind(this)} />
+			    </Link>
 			  </div>
 			</div>
 		);

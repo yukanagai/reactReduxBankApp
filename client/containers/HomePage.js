@@ -1,44 +1,44 @@
 import React from 'react';
 import { Link } from 'react-router';
-import '../../semantic/dist/semantic.min.scss';
+import ButtonWithIcon from '../components/ButtonWithIcon.js';
 
 class HomePage extends React.Component {
+
 	constructor(props) {
 		super(props);
 	}
 
 	showModal(modalType) {
-		this.props.showModal({
-		  type: 'SHOW_MODAL',
-		  modalType: modalType
-		});
+		// CALLING TOGGLE MODAL ACTION TO SWITCH MODAL VIEWS
+		this.props.toggleModal(modalType);
 	}
 
 	render() {
-		var balance = isNaN(this.props.balance) ? 'Try again!' : `$ ${this.props.balance}`;
 		return (
 			<div className='home'>
 				<div className='content'>
 					<p>💰💰💰</p>
-					<p>Your current balance is: <span>{balance}</span></p>
+					<p>Your current balance is: <span>${this.props.balance.balance}</span></p>
 				</div>
 				<div className='buttonSection'>
 					<Link to='/modal/DEPOSIT'>
-						<button className='ui button' onClick={this.showModal.bind(this, 'DEPOSIT')}>
-							<i className="plus icon"></i>
-							DEPOSIT
-						</button>
+						<ButtonWithIcon
+							id='deposit'
+							iconClass='plus icon'
+							buttonText='deposit'
+							onClickAction={this.showModal.bind(this, 'DEPOSIT')} />
 					</Link>
 					<Link to='/modal/WITHDRAW'>
-						<button className='ui button' onClick={this.showModal.bind(this, 'WITHDRAW')}>
-							<i className="minus icon"></i>
-							WITHDRAW
-						</button>
+						<ButtonWithIcon
+							id='withdraw'
+							iconClass='minus icon'
+							buttonText='withdraw'
+							onClickAction={this.showModal.bind(this, 'WITHDRAW')} />
 					</Link>
 				</div>
 			</div>
 		);
-	}
+	};
 }
 
 export default HomePage;

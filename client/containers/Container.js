@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router';
-require('../style.scss');
+require('../styles/style.scss');
+// MAIN WRAPPING CONTAINER/LAYOUT
+// SENDS STATE DOWN TO CHILDREN VIA PROPS
 
-export default class Container extends Component {
+export default class Container extends React.Component {
 	render() {
 		return (
 			<div className='ui text container'>

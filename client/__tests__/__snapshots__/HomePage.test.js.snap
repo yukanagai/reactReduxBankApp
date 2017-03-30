@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`>>>HOMEPAGE --- Snapshot 1`] = `
+<div
+  className="home"
+>
+  <div
+    className="content"
+  >
+    <p>
+      💰💰💰
+    </p>
+    <p>
+      Your current balance is: 
+      <span>
+        $
+      </span>
+    </p>
+  </div>
+  <div
+    className="buttonSection"
+  >
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <button
+        className="ui button"
+        id="deposit"
+        onClick={[Function]}
+      >
+        <i
+          className="plus icon"
+        />
+        deposit
+      </button>
+    </a>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <button
+        className="ui button"
+        id="withdraw"
+        onClick={[Function]}
+      >
+        <i
+          className="minus icon"
+        />
+        withdraw
+      </button>
+    </a>
+  </div>
+</div>
+`;

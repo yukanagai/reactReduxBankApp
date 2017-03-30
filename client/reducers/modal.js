@@ -1,14 +1,14 @@
-const initialState = {
-	modalType: null
+const initialState = { modalType: null };
+
+const modal = (state = initialState, action) => {
+	switch (action.type) {
+		case 'TOGGLE_MODAL':
+			return {
+				modalType: action.modalType
+			};
+		default:
+			return initialState;
+	}
 };
 
-export default function modal(state = initialState, action) {
-	switch(action.type) {
-		case 'SHOW_MODAL' :
-			return action.modalType.modalType;
-		case 'HIDE_MODAL' :
-			return null;
-		default :
-			return state;
-	};
-};
+export default modal;

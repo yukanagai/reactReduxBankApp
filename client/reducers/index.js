@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import balance from './updateBalance.js';
+import balance from './balance.js';
 import modalType from './modal.js';
 
 const rootReducer = combineReducers({

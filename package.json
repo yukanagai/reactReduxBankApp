@@ -4,7 +4,9 @@
   "description": ":)",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
   },
   "author": "",
   "license": "ISC",
@@ -26,8 +28,14 @@
     "webpack": "^2.3.2"
   },
   "devDependencies": {
+    "babel-jest": "^19.0.0",
+    "enzyme": "^2.8.0",
     "file-loader": "^0.10.1",
+    "jest": "^19.0.2",
     "node-sass": "^4.5.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-test-renderer": "^15.4.2",
+    "redux-mock-store": "^1.2.2",
     "sass-loader": "^6.0.3",
     "url-loader": "^0.5.8",
     "webpack-dev-server": "^2.4.2"
